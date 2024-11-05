@@ -1,0 +1,238 @@
+/* Estilo general */
+*::after *::before * {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* estilo de footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  font-size: large;
+}
+
+#logo {
+  width: 400px;
+  align-items: center;
+}
+
+/** estilos header */
+header {
+  background-color: rgb(2, 86, 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px 40px 20px;
+}
+
+#banner {
+  gap: 10px;
+  max-width: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav a {
+  font-size: large;
+  border-color: black;
+  color: black;
+  font-weight: 900;
+}
+
+/*  Estilos body */
+body {
+  background-color: black;
+  margin: 2.5px;
+  max-width: auto;
+  font-family: "Montserrat";
+  color: black;
+}
+
+body p,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* estilos del carro  de compras */
+.icono-carro {
+  width: 35px;
+  height: 35px;
+  stroke: black;
+}
+
+.icono-carro:hover {
+  cursor: pointer;
+}
+
+.contador-productos {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  background-color: red;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+#contador-productos {
+  font-size: 12px;
+}
+
+.container-carrito-productos {
+  position: absolute; /* queda fijado */
+  width: 400px;
+  top: 45px;
+  background-color: whitesmoke;
+  z-index: 1; /* es para que el carrito este por delante de otros elementos en el fondo */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  right: 20px; /* es para que no se me desborde fuera del body hacia la derecha*/
+}
+
+.carrito-producto {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.info-carrito-productos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.info-carrito-productos p {
+  color: black;
+}
+
+.nombre-producto-carrito {
+  font-size: 20px;
+}
+
+.precio-producto-carrito {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.cantidad-productos-carrito {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.total-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.total-carrito h3 {
+  font-size: auto;
+  font-weight: 700;
+  color: black;
+}
+
+.total-pagar {
+  font-size: auto;
+  font-weight: 900;
+}
+
+.hidden-carro {
+  display: none;
+}
+
+.icono-close {
+  width: 25px;
+  height: 25px;
+}
+
+.icono-close:hover {
+  stroke: red;
+  cursor: pointer;
+}
+
+.container-icon-carro {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.imagen {
+  border-radius: 10px;
+  background-color: rgba(203, 239, 181, 0.806);
+}
+
+.imagen:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 20);
+}
+
+.info-producto {
+  padding: 10px 20px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-producto h2 {
+  color: black;
+}
+
+.imagen img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
+  transition: all 0.5s;
+}
+
+.imagen:hover img {
+  transform: scale(1.2);
+}
+
+.imagen figure {
+  overflow: hidden;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+}
