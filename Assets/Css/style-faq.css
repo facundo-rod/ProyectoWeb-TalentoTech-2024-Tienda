@@ -1,119 +1,114 @@
 *::after *::before * {
-    margin: 5px;
-    padding: 5px;
-    box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* estilo de footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  font-size: large;
+}
+
+#logo {
+  width: 450px;
+  align-items: center;
+}
+
+/* estilos header */
+header {
+  background-color: rgb(40, 85, 40);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px 40px 20px;
+  height: 39px;
+}
+
+.container-faq {
+  margin: 20px;
+  color: white;
+}
+
+li {
+  padding: 0 0 10px 10px;
+}
+
+.container-ol {
+  width: auto;
+  border-radius: 10px;
+  background-color: rgba(000, 000, 000, 0.68);
+  padding: 20px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav a {
+  font-size: large;
+  border-color: black;
+  color: white;
+  font-weight: 900;
+}
+
+/*  Estilos body */
+body {
+  margin: 0;
+  max-width: auto;
+  font-family: "Montserrat";
+  color: white;
+  background-image: url("/Assets/Img/background4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body p,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/*Media Queries*/
+/*Pantallas medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  #logo {
+    width: 300px;
   }
-  
-  /* estilo de footer */
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-  }
-  
+
   footer p {
     font-size: large;
   }
-  
-  #logo {
-    width: 450px;
-    align-items: center;
-  }
-  
-  /* estilos header */
-  header {
-    background-color: rgb(40, 85, 40);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 20px 40px 20px;
-    height: 39px;
-  }
-  
-  .container-ol {
-    width: auto;
-    border-radius: 10px;
-    background-color: rgba(000, 000, 000, 0.68);
-    padding: 20px; 
-    color: white;
-  }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  
-  nav a {
-    font-size: large;
-    border-color: black;
-    color: white;
-    font-weight: 900;
-  }
-  
-  /*  Estilos body */
-  body {
-    margin: 0;
-    max-width: auto;
-    font-family: "Montserrat";
-    color: white;
-    background-image: url(/Assets/Img/backgroun4.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
   .container-faq {
-    margin: 20px;
-    color: white;
+    font-size: small;
+  }
+}
+
+/*  Para dispositivos pequeños */
+@media (max-width: 767px) {
+  #logo {
+    width: 200px;
   }
 
-  li {
-    padding: 0 0 10px 10px;
+  footer p {
+    font-size: x-small;
   }
 
-  body p,
-  h1,
-  h2,
-  h3 {
-    color: white;
+  .container-faq {
+    font-size: x-small;
   }
-  
-  /*Media Queries*/
-  
-  /*Pantallas medianas*/
-  @media (min-width: 768px) and (max-width: 1023px) {
-  
-    #logo {
-      width: 300px;
-    }
-  
-    footer p {
-      font-size: large;
-    }
-
-    .container-faq {
-      font-size: small;
-    }
-
-  }
-  
-  /*  Para dispositivos pequeños */
-  @media (max-width: 767px) {
-  
-    #logo {
-      width: 200px;
-    }
-  
-    footer p {
-      font-size: x-small;
-    }
-
-    .container-faq {
-      font-size: x-small;
-    }
-  }
-  
+}

@@ -238,78 +238,78 @@ button {
   cursor: pointer;
 }
 
-
 /*Media Queries*/
-  
-  /*Pantallas medianas*/
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .container-imagenes {
-      grid-template-columns: repeat(2, 1fr);
-      margin: 0 auto; /* Centra el contenedor */
-      padding: 25px;
-    }
-    
-    body {
-      margin: 1.5px;
-    }
 
-    .container-carrito-productos {
-      width: 300px;
-    }
-  
-    #logo {
-      width: 300px;
-    }
-  
-    footer p {
-      font-size: large;
-    }
-  
-    /* Reducir el tamaño del texto en el cuadro del carrito */
-    .nombre-producto-carrito, .precio-producto-carrito, .cantidad-productos-carrito {
-      font-size: 16px;
-    }
+/*Pantallas medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-imagenes {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 25px;
   }
-  
-  /*  Para dispositivos pequeños */
-  @media (max-width: 767px) {
-    .container-imagenes {
-      grid-template-columns: 1fr;
-      width: 380px;
-      margin: 0 auto; /*centra el contenedor  */
 
-    }
-
-    body {
-      margin: 1px;
-    }
-
-  
-    .imagen {
-      height: 670px;
-    }
-
-    .container-carrito-productos {
-      width: 150px;
-      right: 10px; /* para que quede el cuadro dentro y no se desborde hacia la derecha*/
-    }
-  
-    #logo {
-      width: 200px;
-    }
-  
-    footer p {
-      font-size: x-small;
-    }
-  
-    /* reducimos el tamaño de texto*/
-    .nombre-producto-carrito, .precio-producto-carrito, .cantidad-productos-carrito {
-      font-size: 10px;
-    }
-  
-    /* Ajustamos el contenedor del icono de carrito*/
-    .container-icon-carro {
-      padding: 5px;
-    }
+  body {
+    margin: 1.5px;
   }
-  
+
+  .container-carrito-productos {
+    width: 300px;
+  }
+
+  #logo {
+    width: 300px;
+  }
+
+  footer p {
+    font-size: large;
+  }
+
+  /* Reducir el tamaño del texto en el cuadro del carrito */
+  .nombre-producto-carrito,
+  .precio-producto-carrito,
+  .cantidad-productos-carrito {
+    font-size: 16px;
+  }
+}
+
+/*  Para dispositivos pequeños */
+@media (max-width: 767px) {
+  .container-imagenes {
+    grid-template-columns: 1fr;
+    width: 380px;
+    margin: 0 auto; /*centra el contenedor  */
+  }
+
+  body {
+    margin: 1px;
+  }
+
+  .imagen {
+    height: 670px;
+  }
+
+  .container-carrito-productos {
+    width: 150px;
+    right: 10px; /* para que quede el cuadro dentro y no se desborde hacia la derecha*/
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  footer p {
+    font-size: x-small;
+  }
+
+  /* reducimos el tamaño de texto*/
+  .nombre-producto-carrito,
+  .precio-producto-carrito,
+  .cantidad-productos-carrito {
+    font-size: 10px;
+  }
+
+  /* Ajustamos el contenedor del icono de carrito*/
+  .container-icon-carro {
+    padding: 5px;
+  }
+}
