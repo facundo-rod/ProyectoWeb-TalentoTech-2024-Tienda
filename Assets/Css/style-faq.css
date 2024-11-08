@@ -69,7 +69,7 @@ body {
   max-width: auto;
   font-family: "Montserrat";
   color: white;
-  background-image: url("/Assets/Img/background4.jpg");
+  background-image: url("./Assets/Img/background4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
