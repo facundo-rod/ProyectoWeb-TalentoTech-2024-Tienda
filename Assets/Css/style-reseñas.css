@@ -1,0 +1,126 @@
+*::after *::before * {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* estilo de footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  
+  footer p {
+    font-size: large;
+  }
+  
+  #logo {
+    width: 450px;
+    align-items: center;
+  }
+  
+  /* estilos header */
+  header {
+    background-color: rgb(40, 85, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 40px 20px;
+    height: 39px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  nav a {
+    font-size: large;
+    border-color: black;
+    color: white;
+    font-weight: 900;
+  }
+  
+  /*  Estilos body */
+  body {
+    margin: 0;
+    max-width: auto;
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  body p,
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+
+  .container-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.review {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h2 {
+    margin: 0;
+    color: black;
+}
+
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.review p {
+    margin: 10px 0;
+    color: black;
+}
+  
+  /*Media Queries*/
+  /*Pantallas medianas*/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #logo {
+      width: 300px;
+    }
+  
+    footer p {
+      font-size: large;
+    }
+  
+    
+  }
+  
+  /*  Para dispositivos pequeños */
+  @media (max-width: 767px) {
+    #logo {
+      width: 200px;
+    }
+  
+    footer p {
+      font-size: x-small;
+    }
+  
+    
+  }
+  
